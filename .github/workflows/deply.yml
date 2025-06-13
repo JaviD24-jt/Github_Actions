@@ -12,3 +12,10 @@ jobs:
         #este paso es un comando que se ejecuta en el servidor y se usa run
         run: echo "Hola mundo desde el primer job"
 
+  second_job:
+    runs-on: ubuntu-latest # Use the latest Ubuntu version esto es una directiva
+    # El job contiene una serie de pasos para el sistema
+    steps:
+      - name: hola mundo
+        #este paso es un comando que se ejecuta en el servidor y se usa run
+        run: echo "Hola mundo segundo"
